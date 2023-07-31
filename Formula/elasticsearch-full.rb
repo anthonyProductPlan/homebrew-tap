@@ -65,7 +65,7 @@ class ElasticsearchFull < Formula
     s
   end
 
-  plist_options :manual => "elasticsearch"
+  service.require_root :manual => "elasticsearch"
 
   def plist
     <<~EOS
